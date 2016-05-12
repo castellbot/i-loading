@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mariocaste.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, minimal-ui">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            pointer-events: none;
+        }
+
+        body {
+            background: #060b14;
+            overflow: hidden;
+
+            font-family: "Roboto", "Open Sans";
+            font-weight: 100;
+        }
+
+        a {
+            color: #4bc2f1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #container {
+            perspective: 50px;
+            -webkit-perspective: 50px;
+            -moz-perspective: 50px;
+            -ms-perspective: 50px;
+
+            transform-origin: 50% 100%;
+            -webkit-transform-origin: 50% 100%;
+            -moz-transform-origin: 50% 100%;
+            -ms-transform-origin: 50% 100%;
+
+            opacity: 0.55;
+        }
+
+        #welcome {
+            position: fixed;
+            width: 22rem;
+            left: 50%;
+            top: 45%;
+            margin-top: -1rem;
+            margin-left: -11rem;
+            
+            font-weight: 200;
+            color: #fff;
+            opacity: 0.65;
+            text-align: center;
+            /*font-size: 1.275rem;*/
+            line-height: 1.45rem;
+            /*letter-spacing: 0.135em;*/
+            word-spacing: -0.075rem;
+        }
+
+        #welcome p {
+
+        }
+
+        @media screen and (max-width: 400px) {
+            #welcome {
+                font-size: 1.4rem !important;
+            }
+        }
+
+        #browserWidthNotice {
+            font-style: italic;
+            display: none;
+        }
+
+        .dot {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+
+            border-radius: 30px;
+            background-color: #4bc2f1;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <p id="browserWidthNotice">
+            Loading....
+        </p>
+        <p>
+            Right now I'm upgrading my website and portfolio.            
+        </p>
+        <p>
+            If you want to contact me, you can<br /><br /><a href='mailto:mario502gt@gmail.com' class='btn btn-primary'>Send an email</a><br /><br />Or find me on twitter as:<br /><br /><a href='http://twitter.com/castellbot'>@castellbot</a>
+        </p>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
